@@ -89,8 +89,21 @@ export const metadata: Metadata = {
   },
   
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
+  },
+  
+  manifest: "/site.webmanifest",
+  
+  appleWebApp: {
+    title: "Juravel",
+    capable: true,
+    statusBarStyle: "default",
   },
   
   category: "Religion",
@@ -348,6 +361,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
+        {/* Apple Web App meta tags */}
+        <meta name="apple-mobile-web-app-title" content="Juravel" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#1a365d" />
+        <meta name="msapplication-TileColor" content="#1a365d" />
+        
         {/* Additional SEO meta tags */}
         <meta name="subject" content="Rabbi Shmuel Zev Juravel - Torah Educator - South Fallsburg, New York" />
         <meta name="topic" content="Rabbi Shmuel Zev Juravel Biography and Teachings" />
