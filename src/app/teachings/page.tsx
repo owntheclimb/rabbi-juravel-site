@@ -78,7 +78,12 @@ export default function Teachings() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
       />
 
-      <div className="relative bg-cover bg-center py-40" style={{ backgroundImage: 'url(/hero-teachings.jpg)' }}>
+      <div className="relative h-[400px] overflow-hidden">
+        <img 
+          src="/hero-teachings.jpg" 
+          alt="Rabbi Shmuel Zev Juravel teaching Torah in the study hall"
+          className="w-full h-full object-cover object-[center_25%]"
+        />
         <div className="absolute inset-0 bg-black/40" aria-hidden="true"></div>
         <div className="absolute bottom-0 left-0 z-10 max-w-4xl px-4 sm:px-6 lg:px-8 pb-12">
           <h1 className="text-4xl font-bold mb-3 text-white">Teaching Torah</h1>
