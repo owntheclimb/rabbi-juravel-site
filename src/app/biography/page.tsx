@@ -48,30 +48,38 @@ const breadcrumbJsonLd = {
   ]
 };
 
-const personJsonLd = {
+// WebPage schema linking to global Person entity
+const webPageJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Rabbi Shmuel Zev Juravel",
-  "alternateName": ["Rabbi Shmuel Z. Juravel", "Shmuel Zev Juravel", "Rabbi Juravel"],
-  "disambiguatingDescription": "Orthodox Jewish Rabbi and Torah educator in South Fallsburg, New York, known for the 39 Melochos series",
-  "birthDate": "1971-11-23",
-  "birthPlace": { "@type": "Place", "name": "Brooklyn, New York, USA" },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "South Fallsburg",
-    "addressRegion": "NY",
-    "addressCountry": "US"
-  },
-  "spouse": { "@type": "Person", "name": "Tova Klatzko" },
-  "alumniOf": [
-    { "@type": "EducationalOrganization", "name": "Yeshiva Tiferes Elimelech" },
-    { "@type": "EducationalOrganization", "name": "Yeshiva Staten Island" },
-    { "@type": "EducationalOrganization", "name": "Yeshiva Gedola of Detroit" },
-    { "@type": "EducationalOrganization", "name": "Yeshiva of Brisk", "location": "Israel" }
-  ],
-  "jobTitle": ["Rabbi", "Rebbe", "Torah Educator"],
-  "knowsAbout": ["Halacha", "Jewish Law", "39 Melochos", "Shabbos", "Talmud", "Chumash Chasam Sofer"],
-  "url": "https://shmuelzevjuravel.com/biography"
+  "@type": "WebPage",
+  "@id": "https://shmuelzevjuravel.com/biography#webpage",
+  "url": "https://shmuelzevjuravel.com/biography",
+  "name": "Biography - Rabbi Shmuel Zev Juravel of South Fallsburg, NY",
+  "description": "Complete biography of Rabbi Shmuel Zev Juravel, born November 23, 1971 in Brooklyn, NY. Torah educator in South Fallsburg, New York since 2005.",
+  "isPartOf": { "@id": "https://shmuelzevjuravel.com/#website" },
+  "about": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "mainEntity": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "datePublished": "2025-01-01",
+  "dateModified": "2025-12-16"
+};
+
+// Article schema for biography content
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://shmuelzevjuravel.com/biography#article",
+  "headline": "Biography of Rabbi Shmuel Zev Juravel - South Fallsburg, New York",
+  "description": "Complete biography of Rabbi Shmuel Zev Juravel of South Fallsburg, NY (born November 23, 1971 in Brooklyn). Education at Yeshiva of Brisk, family, publications, and community service.",
+  "author": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "about": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "mainEntityOfPage": { "@id": "https://shmuelzevjuravel.com/biography#webpage" },
+  "datePublished": "2025-01-01",
+  "dateModified": "2025-12-16",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Rabbi Shmuel Zev Juravel Official Website",
+    "url": "https://shmuelzevjuravel.com"
+  }
 };
 
 export default function Biography() {
@@ -83,13 +91,18 @@ export default function Biography() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
 
       <div className="bg-gradient-to-r from-primary to-primary-hover text-primary-foreground py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-2">Biography</h1>
           <p className="text-lg opacity-90">Rabbi Shmuel Zev Juravel of South Fallsburg, New York</p>
+          <p className="text-sm opacity-75 mt-1">Born November 23, 1971 in Brooklyn, NY</p>
         </div>
       </div>
 

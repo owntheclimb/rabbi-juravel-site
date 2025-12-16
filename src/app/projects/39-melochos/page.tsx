@@ -54,12 +54,71 @@ const breadcrumbJsonLd = {
   ]
 };
 
+// CreativeWork schema for 39 Melochos series with Amazon identifiers
+const creativeWorkJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  "@id": "https://shmuelzevjuravel.com/projects/39-melochos#series",
+  "name": "39 Melochos Halacha Series",
+  "alternateName": ["39 Melachos", "Thirty-Nine Melochos"],
+  "description": "Comprehensive Halacha series covering the 39 categories of creative work prohibited on Shabbos. Created by Rabbi Shmuel Zev Juravel of South Fallsburg, New York.",
+  "author": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "creator": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "datePublished": "2015",
+  "inLanguage": "en",
+  "about": [
+    { "@type": "Thing", "name": "39 Melochos" },
+    { "@type": "Thing", "name": "Shabbos Laws" },
+    { "@type": "Thing", "name": "Halacha" },
+    { "@type": "Thing", "name": "Jewish Law" }
+  ],
+  "genre": ["Religious Education", "Jewish Law", "Halacha"],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Torah learners and Jewish educators"
+  },
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "ASIN",
+      "value": "B0BN2CRTFX"
+    }
+  ],
+  "sameAs": [
+    "https://www.amazon.com/39-Melachos-Rabbi-Juravel-Shipwrecked/dp/B0BN2CRTFX",
+    "https://www.amazon.com/stores/Rabbi-Juravel/author/B00J5P2SA6"
+  ],
+  "url": "https://shmuelzevjuravel.com/projects/39-melochos",
+  "mainEntityOfPage": "https://shmuelzevjuravel.com/projects/39-melochos"
+};
+
+// WebPage schema
+const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://shmuelzevjuravel.com/projects/39-melochos#webpage",
+  "url": "https://shmuelzevjuravel.com/projects/39-melochos",
+  "name": "39 Melochos Halacha Series by Rabbi Shmuel Zev Juravel",
+  "description": "39 Melochos Halacha series on CD by Rabbi Shmuel Zev Juravel of South Fallsburg, NY (2015). Comprehensive instruction on Shabbos laws.",
+  "isPartOf": { "@id": "https://shmuelzevjuravel.com/#website" },
+  "about": { "@id": "https://shmuelzevjuravel.com/projects/39-melochos#series" },
+  "mainEntity": { "@id": "https://shmuelzevjuravel.com/projects/39-melochos#series" }
+};
+
 export default function Project39Melochos() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(creativeWorkJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
       />
 
       <div className="bg-gradient-to-r from-primary to-primary-hover text-primary-foreground py-12">

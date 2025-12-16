@@ -79,7 +79,6 @@ export const metadata: Metadata = {
     title: "Rabbi Shmuel Zev Juravel | South Fallsburg, New York",
     description: "Official website of Rabbi Shmuel Zev Juravel of South Fallsburg, NY. Author of 39 Melochos series, weekly Parsha lectures on Matzav.com and 24Six.",
     images: ["/og-image-home.jpg"],
-    creator: "@shmuelzevjuravel",
   },
   
   alternates: {
@@ -277,6 +276,7 @@ const personJsonLd = {
   "url": "https://shmuelzevjuravel.com/",
   "mainEntityOfPage": "https://shmuelzevjuravel.com/",
   "sameAs": [
+    "https://www.amazon.com/stores/Rabbi-Juravel/author/B00J5P2SA6",
     "https://matzav.com/watch-rav-shmuel-zev-juravel-on-parshas-vayeira/",
     "https://24six.app/preview/video/artist/1160/rabbi-juravel"
   ],
@@ -363,7 +363,6 @@ export default function RootLayout({
         <meta name="directory" content="submission" />
         <meta name="pagename" content="Rabbi Shmuel Zev Juravel - South Fallsburg, NY" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="canonical" href="https://shmuelzevjuravel.com/" />
         <link rel="author" href="https://shmuelzevjuravel.com/biography" />
       </head>
       <body

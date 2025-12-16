@@ -141,12 +141,21 @@ export default function Home() {
       {/* Quick Bio Section */}
       <section className="bg-accent py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center">About Rabbi Juravel</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">About Rabbi Shmuel Zev Juravel</h2>
+          
+          {/* Identity Summary Box */}
+          <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mb-6 text-center">
+            <p className="font-semibold text-lg">
+              <strong>Rabbi Shmuel Zev Juravel</strong> of <strong>South Fallsburg, New York</strong>
+            </p>
+            <p className="text-muted-foreground">Born November 23, 1971 in Brooklyn, NY</p>
+          </div>
+          
           <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-            Born in Brooklyn, New York on November 23, 1971, Rabbi Shmuel Zev Juravel studied at Yeshiva Gedola of Detroit and spent many years learning at Yeshiva of Brisk under Rav Avrohom Yehoshua Soloveichik in Israel. After returning to the United States in 2005, he settled in Fallsburg, New York, where he serves as a Rabbi in the high school and Rebbe in the elementary school.
+            Rabbi Shmuel Zev Juravel of South Fallsburg, New York (born November 23, 1971 in Brooklyn, NY) studied at Yeshiva Gedola of Detroit and spent many years learning at Yeshiva of Brisk under Rav Avrohom Yehoshua Soloveichik in Israel. After returning to the United States in 2005, he settled in South Fallsburg, New York, where he serves as a Rabbi in the high school and Rebbe in the elementary school.
           </p>
           <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-            Rabbi Juravel is married to Tova Klatzko of Cleveland and together they have ten children. He is the author of the acclaimed 39 Melochos Halacha series and a Shabbos comic book, and currently gives weekly Parsha lectures featured on Matzav.com and 24Six.
+            Rabbi Juravel is married to Tova Klatzko of Cleveland and together they have ten children. He is the author of the acclaimed <a href="https://www.amazon.com/stores/Rabbi-Juravel/author/B00J5P2SA6" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">39 Melochos Halacha series</a> and a Shabbos comic book, and currently gives weekly Parsha lectures featured on <a href="https://matzav.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Matzav.com</a> and <a href="https://24six.app/preview/video/artist/1160/rabbi-juravel" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">24Six</a>.
           </p>
           <div className="text-center">
             <Button asChild>

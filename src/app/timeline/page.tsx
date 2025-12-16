@@ -75,7 +75,8 @@ export default function Timeline() {
       <div className="bg-gradient-to-r from-primary to-primary-hover text-primary-foreground py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-2">Life Timeline</h1>
-          <p className="text-lg opacity-90">Key moments and milestones</p>
+          <p className="text-lg opacity-90">Rabbi Shmuel Zev Juravel of South Fallsburg, NY</p>
+          <p className="text-sm opacity-75 mt-1">Born November 23, 1971 in Brooklyn, NY</p>
         </div>
       </div>
 

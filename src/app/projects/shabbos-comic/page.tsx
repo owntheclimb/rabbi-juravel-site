@@ -54,12 +54,61 @@ const breadcrumbJsonLd = {
   ]
 };
 
+// CreativeWork schema for Shabbos Comic Book
+const creativeWorkJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ComicStory",
+  "@id": "https://shmuelzevjuravel.com/projects/shabbos-comic#book",
+  "name": "Shabbos Comic Book",
+  "description": "Educational comic book teaching children about Shabbos observance through visual storytelling. Created by Rabbi Shmuel Zev Juravel of South Fallsburg, New York.",
+  "author": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "creator": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "datePublished": "2019",
+  "inLanguage": "en",
+  "about": [
+    { "@type": "Thing", "name": "Shabbos" },
+    { "@type": "Thing", "name": "Jewish Education" },
+    { "@type": "Thing", "name": "Children's Education" }
+  ],
+  "genre": ["Children's Religious Education", "Jewish Comics", "Educational Comics"],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Elementary school-aged children"
+  },
+  "sameAs": [
+    "https://www.amazon.com/stores/Rabbi-Juravel/author/B00J5P2SA6"
+  ],
+  "url": "https://shmuelzevjuravel.com/projects/shabbos-comic",
+  "mainEntityOfPage": "https://shmuelzevjuravel.com/projects/shabbos-comic"
+};
+
+// WebPage schema
+const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://shmuelzevjuravel.com/projects/shabbos-comic#webpage",
+  "url": "https://shmuelzevjuravel.com/projects/shabbos-comic",
+  "name": "Shabbos Comic Book by Rabbi Shmuel Zev Juravel",
+  "description": "Shabbos comic book for children by Rabbi Shmuel Zev Juravel of South Fallsburg, NY (2019). Educational visual storytelling about Shabbos observance.",
+  "isPartOf": { "@id": "https://shmuelzevjuravel.com/#website" },
+  "about": { "@id": "https://shmuelzevjuravel.com/projects/shabbos-comic#book" },
+  "mainEntity": { "@id": "https://shmuelzevjuravel.com/projects/shabbos-comic#book" }
+};
+
 export default function ProjectShabbosComic() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(creativeWorkJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
       />
 
       <div className="bg-gradient-to-r from-primary to-primary-hover text-primary-foreground py-12">

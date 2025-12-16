@@ -53,33 +53,28 @@ const breadcrumbJsonLd = {
 const collectionJsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
+  "@id": "https://shmuelzevjuravel.com/lectures#collection",
   "name": "Weekly Parsha Lectures by Rabbi Shmuel Zev Juravel",
-  "description": "Weekly Torah lectures on the Parsha by Rabbi Shmuel Zev Juravel of South Fallsburg, New York",
+  "description": "Weekly Torah lectures on the Parsha by Rabbi Shmuel Zev Juravel of South Fallsburg, New York (born November 23, 1971 in Brooklyn, NY)",
   "url": "https://shmuelzevjuravel.com/lectures",
-  "about": {
-    "@type": "Person",
-    "name": "Rabbi Shmuel Zev Juravel",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "South Fallsburg",
-      "addressRegion": "NY"
-    }
-  }
+  "isPartOf": { "@id": "https://shmuelzevjuravel.com/#website" },
+  "about": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "author": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" }
 };
 
 const videoJsonLd = {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": "Weekly Parsha Lecture by Rabbi Shmuel Zev Juravel",
-  "description": "Torah insights and commentary on the weekly portion by Rabbi Shmuel Zev Juravel",
+  "@id": "https://shmuelzevjuravel.com/lectures#featured-video",
+  "name": "Weekly Parsha Lecture by Rabbi Shmuel Zev Juravel of South Fallsburg, NY",
+  "description": "Torah insights and commentary on the weekly portion by Rabbi Shmuel Zev Juravel of South Fallsburg, New York (born November 23, 1971 in Brooklyn, NY)",
   "thumbnailUrl": "https://shmuelzevjuravel.com/og-image-lectures.jpg",
   "uploadDate": "2025-01-01",
   "contentUrl": "https://player.vimeo.com/video/1133508456",
   "embedUrl": "https://player.vimeo.com/video/1133508456",
-  "author": {
-    "@type": "Person",
-    "name": "Rabbi Shmuel Zev Juravel"
-  }
+  "author": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "creator": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "isPartOf": { "@id": "https://shmuelzevjuravel.com/lectures#collection" }
 };
 
 export default function Lectures() {
@@ -101,7 +96,7 @@ export default function Lectures() {
       <div className="bg-gradient-to-r from-primary to-primary-hover text-primary-foreground py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-2">Weekly Parsha Lectures</h1>
-          <p className="text-lg opacity-90">Torah insights on the weekly portion</p>
+          <p className="text-lg opacity-90">Torah insights by Rabbi Shmuel Zev Juravel of South Fallsburg, NY</p>
         </div>
       </div>
 

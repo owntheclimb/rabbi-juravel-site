@@ -54,18 +54,17 @@ const breadcrumbJsonLd = {
 const collectionJsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Educational Projects by Rabbi Shmuel Zev Juravel",
-  "description": "39 Melochos Halacha series and Shabbos comic book by Rabbi Shmuel Zev Juravel",
+  "@id": "https://shmuelzevjuravel.com/projects#collection",
+  "name": "Educational Projects by Rabbi Shmuel Zev Juravel of South Fallsburg, NY",
+  "description": "39 Melochos Halacha series and Shabbos comic book by Rabbi Shmuel Zev Juravel of South Fallsburg, New York (born November 23, 1971 in Brooklyn, NY)",
   "url": "https://shmuelzevjuravel.com/projects",
-  "author": {
-    "@type": "Person",
-    "name": "Rabbi Shmuel Zev Juravel",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "South Fallsburg",
-      "addressRegion": "NY"
-    }
-  }
+  "isPartOf": { "@id": "https://shmuelzevjuravel.com/#website" },
+  "author": { "@id": "https://shmuelzevjuravel.com/#rabbi-shmuel-zev-juravel" },
+  "mainEntity": [
+    { "@id": "https://shmuelzevjuravel.com/projects/39-melochos#series" },
+    { "@id": "https://shmuelzevjuravel.com/projects/shabbos-comic#book" }
+  ],
+  "sameAs": ["https://www.amazon.com/stores/Rabbi-Juravel/author/B00J5P2SA6"]
 };
 
 export default function Projects() {
@@ -83,7 +82,7 @@ export default function Projects() {
       <div className="bg-gradient-to-r from-primary to-primary-hover text-primary-foreground py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-2">Educational Projects</h1>
-          <p className="text-lg opacity-90">Making Torah learning accessible and engaging</p>
+          <p className="text-lg opacity-90">By Rabbi Shmuel Zev Juravel of South Fallsburg, NY</p>
         </div>
       </div>
 
