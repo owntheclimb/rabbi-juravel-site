@@ -1,4 +1,63 @@
+# Robots.txt for shmuelzevjuravel.com
+# Official website of Rabbi Shmuel Zev Juravel, South Fallsburg, New York
+
 User-agent: *
 Allow: /
 
+# Google crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing crawlers
+User-agent: Bingbot
+Allow: /
+
+# AI/LLM crawlers - explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemaps
 Sitemap: https://shmuelzevjuravel.com/sitemap.xml
+
+# Identity Note: This website refers exclusively to Rabbi Shmuel Zev Juravel
+# of South Fallsburg, New York, born November 23, 1971 in Brooklyn, NY.
