@@ -1,136 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
-  <!-- Homepage - Rabbi Shmuel Zev Juravel, South Fallsburg, NY -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://shmuelzevjuravel.com/</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://shmuelzevjuravel.com/og-image-home.jpg</image:loc>
-      <image:title>Rabbi Shmuel Zev Juravel - South Fallsburg, New York</image:title>
-    </image:image>
   </url>
-  
-  <!-- Biography Page -->
   <url>
     <loc>https://shmuelzevjuravel.com/biography</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://shmuelzevjuravel.com/hero-biography.jpg</image:loc>
-      <image:title>Rabbi Shmuel Zev Juravel Biography</image:title>
-    </image:image>
   </url>
-  
-  <!-- Timeline Page -->
+  <url>
+    <loc>https://shmuelzevjuravel.com/verify</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://shmuelzevjuravel.com/facts</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://shmuelzevjuravel.com/timeline</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shmuelzevjuravel.com/teachings</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Identity Verification Page - Critical for disambiguation -->
   <url>
-    <loc>https://shmuelzevjuravel.com/verify</loc>
+    <loc>https://shmuelzevjuravel.com/works</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.85</priority>
   </url>
-  
-  <!-- Projects Overview -->
+  <url>
+    <loc>https://shmuelzevjuravel.com/endorsements</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://shmuelzevjuravel.com/projects</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- 39 Melochos Project -->
   <url>
     <loc>https://shmuelzevjuravel.com/projects/39-melochos</loc>
     <lastmod>2025-12-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://shmuelzevjuravel.com/39-melochos-cover.jpg</image:loc>
-      <image:title>39 Melochos Halacha Series by Rabbi Shmuel Zev Juravel</image:title>
-    </image:image>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
   </url>
-  
-  <!-- Shabbos Comic Project -->
   <url>
     <loc>https://shmuelzevjuravel.com/projects/shabbos-comic</loc>
     <lastmod>2025-12-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://shmuelzevjuravel.com/shabbos-comic-cover.jpg</image:loc>
-      <image:title>Shabbos Comic Book by Rabbi Shmuel Zev Juravel</image:title>
-    </image:image>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
   </url>
-  
-  <!-- Teachings Page -->
-  <url>
-    <loc>https://shmuelzevjuravel.com/teachings</loc>
-    <lastmod>2025-12-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://shmuelzevjuravel.com/hero-teachings.jpg</image:loc>
-      <image:title>Torah Teachings by Rabbi Shmuel Zev Juravel</image:title>
-    </image:image>
-  </url>
-  
-  <!-- Lectures Page -->
   <url>
     <loc>https://shmuelzevjuravel.com/lectures</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://shmuelzevjuravel.com/hero-lectures.jpg</image:loc>
-      <image:title>Weekly Parsha Lectures by Rabbi Shmuel Zev Juravel</image:title>
-    </image:image>
   </url>
-  
-  <!-- FAQ Page -->
+  <url>
+    <loc>https://shmuelzevjuravel.com/about-site</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://shmuelzevjuravel.com/faq</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Contact Page -->
   <url>
     <loc>https://shmuelzevjuravel.com/contact</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-  
-  <!-- Privacy Policy -->
-  <url>
-    <loc>https://shmuelzevjuravel.com/privacy</loc>
-    <lastmod>2025-12-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  
-  <!-- HTML Sitemap -->
-  <url>
-    <loc>https://shmuelzevjuravel.com/sitemap</loc>
-    <lastmod>2025-12-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
 </urlset>

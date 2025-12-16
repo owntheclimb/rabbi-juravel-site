@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img 
@@ -57,13 +57,39 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="hover:underline opacity-90 hover:opacity-100 transition-opacity">
-                  Projects
+                <Link href="/works" className="hover:underline opacity-90 hover:opacity-100 transition-opacity">
+                  Complete Works
+                </Link>
+              </li>
+              <li>
+                <Link href="/endorsements" className="hover:underline opacity-90 hover:opacity-100 transition-opacity">
+                  Endorsements
                 </Link>
               </li>
               <li>
                 <Link href="/lectures" className="hover:underline opacity-90 hover:opacity-100 transition-opacity">
                   Weekly Lectures
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-bold text-lg mb-4">About</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/facts" className="hover:underline opacity-90 hover:opacity-100 transition-opacity">
+                  Quick Facts
+                </Link>
+              </li>
+              <li>
+                <Link href="/about-site" className="hover:underline opacity-90 hover:opacity-100 transition-opacity">
+                  About This Website
+                </Link>
+              </li>
+              <li>
+                <Link href="/projects" className="hover:underline opacity-90 hover:opacity-100 transition-opacity">
+                  Featured Projects
                 </Link>
               </li>
               <li>
